@@ -119,6 +119,56 @@ export function IconMenu(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function IconPhone(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M5.5 4h3l1.5 4.5-2 1.5a11 11 0 0 0 5.5 5.5l1.5-2 4.5 1.5v3a1.5 1.5 0 0 1-1.6 1.5A16 16 0 0 1 4 6.6 1.5 1.5 0 0 1 5.5 4Z" />
+    </svg>
+  );
+}
+
+export function IconMail(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="M4 6.5l8 6 8-6" />
+    </svg>
+  );
+}
+
+export function IconClock(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" />
+    </svg>
+  );
+}
+
 export function IconClose(props: SVGProps<SVGSVGElement>) {
   return (
     <svg

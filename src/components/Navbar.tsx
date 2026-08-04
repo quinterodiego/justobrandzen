@@ -4,9 +4,11 @@ import { useState } from "react";
 import { Logo } from "./Logo";
 import { IconClose, IconMenu } from "./icons";
 
+const MENU_URL = "https://pedidodirecto.net/menu/justobrandzencarta/";
+
 const LINKS = [
   { label: "Inicio", href: "#inicio" },
-  { label: "La Carta", href: "#carta" },
+  { label: "La Carta", href: MENU_URL, external: true },
   { label: "Sobre Nosotros", href: "#nosotros" },
   { label: "Galería", href: "#galeria" },
   { label: "Contacto", href: "#contacto" },
@@ -27,6 +29,8 @@ export function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className={`relative pb-1 uppercase transition-colors hover:text-gold-light ${
                   i === 0
                     ? "text-gold-light after:absolute after:inset-x-0 after:-bottom-0 after:h-[2px] after:bg-gold-light"
@@ -62,6 +66,8 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               onClick={() => setOpen(false)}
               className="rounded px-3 py-2 text-sm font-medium uppercase tracking-wide text-white/90 hover:bg-white/5 hover:text-gold-light"
             >

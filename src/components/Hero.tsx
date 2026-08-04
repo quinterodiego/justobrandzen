@@ -50,7 +50,9 @@ export function Hero() {
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <a
-            href="#carta"
+            href="https://pedidodirecto.net/menu/justobrandzencarta/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 rounded bg-gold-light px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-[#1c1207] transition-colors hover:bg-[color-mix(in_srgb,var(--gold-light)_85%,white)]"
           >
             <IconBook className="h-5 w-5" />
